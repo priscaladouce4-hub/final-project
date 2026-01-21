@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisine & Canvas - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1 class="animated-logo">Cuisine & Canvas</h1>
+            <p>Where Flavor Meets Design.</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-active-link">Home</a></li>
+                <li><a href="services.html">Decoration Services</a></li>
+                <li><a href="recipes.html">Recipe Index</a></li>
+                <li><a href="gallery.html">Portfolio Gallery</a></li>
+                <li><a href="contact.html">Contact & Booking</a></li>
+            </ul>
+        </nav>
+        
+        <main class="consistent-layout">
+            <aside id="sidebar">
+                <h2>Our Location</h2>
+                <p>We serve clients globally, with offices in major design hubs.</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@cuisinecanvas.com</p>
+            </aside>
+            
+            <section id="content-area">
+                <h1>Book a Consultation</h1>
+                <p>Use the form below to tell us about your project.</p>
+
+                <form action="thankyou.html" method="get" class="styled-form">
+                    
+                    <fieldset>
+                        <legend>Client Contact Information</legend>
+                        
+                        <div class="form-group">
+                            <label for="fullName">Your Full Name:</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Project Details</legend>
+
+                        <div class="form-group">
+                            <label for="serviceType">Service Type:</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="decoration">Interior Decoration</option>
+                                <option value="catering">Private Catering / Chef</option>
+                                <option value="event">Event Styling</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Preferred Project Start:</label>
+                            <input type="radio" id="startASAP" name="projectStart" value="asap" required>
+                            <label for="startASAP" class="radio-label">ASAP</label>
+                            <input type="radio" id="start3Months" name="projectStart" value="3months">
+                            <label for="start3Months" class="radio-label">Within 3 Months</label>
+                            <input type="radio" id="start6Months" name="projectStart" value="6months">
+                            <label for="start6Months" class="radio-label">In 6+ Months</label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label>Areas of Interest:</label>
+                            <input type="checkbox" id="interestKitchen" name="interest" value="kitchen">
+                            <label for="interestKitchen" class="checkbox-label">Kitchen Design</label>
+                            <input type="checkbox" id="interestMenu" name="interest" value="menu">
+                            <label for="interestMenu" class="checkbox-label">Menu Creation</label>
+                            <input type="checkbox" id="interestEvent" name="interest" value="event">
+                            <label for="interestEvent" class="checkbox-label">Large Event</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Describe your needs:</label>
+                            <textarea id="description" name="description" rows="5" required></textarea>
+                        </div>
+
+                    </fieldset>
+
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Submit Inquiry</button>
+                    </div>
+
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Cuisine & Canvas | All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
